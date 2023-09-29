@@ -1,72 +1,83 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>section-Gómez</title>
+    <title>Section-Esteban</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
 <header>
     <div class="logo">
-        <img src="assets/imagen/logo-com-1024x512-20190724.png" alt="Logo de pagina">
+        <img src="assets/Img/A.jpg">
     </div>
-    <nav>
-        <ul class="menu">
-            <li><a href="#seccion1">Sección 1</a></li>
-            <li><a href="#seccion2">Sección 2</a></li>
-            <li><a href="#seccion3">Sección 3</a></li>
+    <nav class="menu">
+        <ul>
+            <li><a href="#presentacion-1">Inicio</a></li>
+            <li><a href="#presentacion-2">Documentos</a></li>
+            <li><a href="#presentacion-3">Informacion</a></li>
+            <li><a href="#presentacion-4">Presentacion</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <section id="seccion1">
-        <div class="contenido-seccion">
-            <h2>Sección 1</h2>
-            <p>Seccion buenos dias</p>
-        </div>
-        <img src="assets/imagen/photo-1500382017468-9049fed747ef.jpg" alt="Imagen de la Seccion 1">
-    </section>
+<section class="full-height" id="presentacion-1">
+    <h1>Inicio</h1>
+    <p>Saludos</p>
+    <img src="assets/Img/inicio.gif">
+</section>
+<section class="full-height" id="presentacion-2">
+    <h1>Documentos</h1>
+    <p>Hola</p>
+    <img src="assets/Img/Documentos.gif">
+</section>
+<section class="full-height" id="presentacion-3">
+    <h1>buenas noches </h1>
+    <p>Adios</p>
+    <img src="assets/Img/informacion.gif">
+</section>
+<section class="full-height" id="presentacion-4">
 
-    <section id="seccion2">
-        <div class="contenido-seccion">
-            <h2>Sección 2</h2>
-            <p>Seccion buenas tardes</p>
-        </div>
-        <img src="assets/imagen/f22a6f757021fb9d6107cdd91215c1ba.jpg" alt="Imagen de la Seccion 2">
-    </section>
-
-    <section id="seccion3">
-        <div class="contenido-seccion">
-            <h2>Sección 3</h2>
-            <p>Seccion buenas noches</p>
-        </div>
-        <img src="assets/imagen/18-expresiones-para-referirse-a-la-noche-en-inglés_.webp" alt="Imagen de la Seccion 3">
-    </section>
-</main>
-
-<script>
-    const menuLinks = document.querySelectorAll('nav ul.menu li a');
-
-
-    menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
-
-            menuLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-
-
-            link.classList.add('active');
-        });
-    });
-</script>
-<footer>
-    <div class="container">
-        <p>Derechos de autor © 2023 Felipe Gomez</p>
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
     </div>
-</footer>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: Primera diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">Primera presentacion</text></svg>
+            <div class="carousel-caption d-none d-md-block">
+                <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parte inicial</font></font></h5>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">contenido de inicio</font></font></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: segunda diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">segunda presentacion</text></svg>
+            <div class="carousel-caption d-none d-md-block">
+                <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parte de Desarrollo</font></font></h5>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Representacion del Desarrollo</font></font></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marcador de posición: tercera diapositiva" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Tercera presentacion</text></svg>
+            <div class="carousel-caption d-none d-md-block">
+                <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Parte final</font></font></h5>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Idea final</font></font></p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Anterior</font></font></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Próximo</font></font></span>
+    </button>
+</div>
+</section>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
